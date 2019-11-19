@@ -1,0 +1,10 @@
+1)  https://www.baeldung.com/spring-webflux
+2)  https://www.baeldung.com/spring-5-functional-web
+3)  https://stackoverflow.com/questions/48888997/spring-webflux-data-in-reactjs-ui
+4)  https://www.callicoder.com/reactive-rest-apis-spring-webflux-reactive-mongo/
+5)  https://medium.com/@alex.marcu/building-a-crud-api-with-spring-webflux-3b129c421363
+6)  https://tech.alexandrumarcu.ro/reactive-programming/
+7)  https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html#webflux
+8)  https://howtodoinjava.com/spring-webflux/spring-webflux-tutorial/
+9)  https://www.baeldung.com/spring-5-functional-web
+10) https://developer.okta.com/blog/2018/09/25/spring-webflux-websockets-react

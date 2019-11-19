@@ -10,4 +10,8 @@
 10) https://developer.okta.com/blog/2018/09/25/spring-webflux-websockets-react
 11) https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux
 12) https://dzone.com/articles/spring-di-patterns-the-good-the-bad-and-the-ugly
-13)
+13) https://medium.com/@mladen.maravic/spring-data-mongodb-my-take-on-inheritance-support-102361c08e3d
+14) https://lishman.io/object-mapping-with-spring-data-mongodb
+15) https://www.baeldung.com/jackson-inheritance
+16) https://octoperf.com/blog/2018/02/01/polymorphism-with-jackson/
+17)

@@ -12,10 +12,10 @@ public class CustomerController {
 
     @Autowired
     CustomerRepository customerRepository;
-
-    @GetMapping("/vehicles")
-    public Flux<Customer> getAllVehicles() {
-        return customerRepository.findAll();
-    }
+//
+//    @GetMapping("/vehicles")
+//    public Flux<Customer> getAllVehicles() {
+//        return customerRepository.findAll();
+//    }
 
 }

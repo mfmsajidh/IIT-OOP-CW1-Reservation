@@ -8,3 +8,6 @@
 8)  https://howtodoinjava.com/spring-webflux/spring-webflux-tutorial/
 9)  https://www.baeldung.com/spring-5-functional-web
 10) https://developer.okta.com/blog/2018/09/25/spring-webflux-websockets-react
+11) https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux
+12) https://dzone.com/articles/spring-di-patterns-the-good-the-bad-and-the-ugly
+13)

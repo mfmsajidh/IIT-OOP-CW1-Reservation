@@ -1,4 +1,4 @@
 package iit.oop.reservation.repository;
 
-public interface ScheduleRepository {
+public interface ScheduleRepository extends  {
 }

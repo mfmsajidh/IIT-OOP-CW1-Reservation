@@ -12,8 +12,11 @@ public class VehicleService {
     @Autowired
     VehicleRepository vehicleRepository;
 
-
     public Flux<Vehicle> getAllVehicles() {
         return vehicleRepository.findAll();
+    }
+
+    public Flux<Vehicle> getVehiclesByType(String type) {
+        return vehicleRepository.findAllByType(type);
     }
 }

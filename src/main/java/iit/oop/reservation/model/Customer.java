@@ -6,19 +6,19 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDate;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Document
-public class Schedule {
+public class Customer {
 
     @Id
     private @Setter ObjectId _id;
 
-    private @Getter @Setter LocalDate pickUpDate;
-    private @Getter @Setter LocalDate dropOffDate;
-    private @Getter @Setter LocalDate bookedDate;
-    private @Getter @Setter String customerId;
-    private @Getter @Setter String vehicleId;
+    private @Getter @Setter String name;
+    private @Getter @Setter String nicNumber;
+    private @Getter @Setter int phoneNumber;
+    private @Getter @Setter String email;
 
     public String get_id() {
         return _id.toHexString();

@@ -17,4 +17,7 @@
 17) https://medium.com/backticks-tildes/restful-api-design-put-vs-patch-4a061aa3ed0b
 18) https://restfulapi.net/http-methods/
 19) https://stackoverflow.com/questions/28852246/how-to-update-existing-documents-with-spring-data-mongodb-type-information-after
-20)
+20) https://www.baeldung.com/spring-cors
+21) https://www.baeldung.com/spring-webflux-cors
+22) https://www.baeldung.com/spring-webflux-filters
+23)

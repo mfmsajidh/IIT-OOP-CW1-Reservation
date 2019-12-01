@@ -22,7 +22,7 @@ public class ScheduleController {
         return null;
     }
 
-    @PostMapping("/schedule")
+    @PostMapping("/scheduleVehicle")
     public Mono<Schedule> createSchedule(@Valid @RequestBody Schedule schedule) {
         return scheduleService.createSchedule(schedule);
     }

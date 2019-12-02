@@ -3,11 +3,7 @@ package iit.oop.reservation.controller;
 import iit.oop.reservation.model.Customer;
 import iit.oop.reservation.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.Mono;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -19,7 +15,7 @@ public class CustomerController {
     CustomerService customerService;
 
     @PostMapping("/add")
-    public Mono<Customer> createCustomer(@Valid @RequestBody Customer customer) {
+    public Customer createCustomer(@Valid @RequestBody Customer customer) {
         return customerService.createCustomer(customer);
     }
 }

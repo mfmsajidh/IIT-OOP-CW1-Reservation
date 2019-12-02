@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.Flux;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/vehicle")
@@ -17,12 +18,12 @@ public class VehicleController {
     VehicleService vehicleService;
 
     @GetMapping("/getAll")
-    public Flux<Vehicle> getAllVehicles() {
+    public List<Vehicle> getAllVehicles() {
         return vehicleService.getAllVehicles();
     }
 
     @GetMapping("/{type}")
-    public Flux<Vehicle> getVehiclesByType(@PathVariable("type") String type) {
+    public List<Vehicle> getVehiclesByType(@PathVariable("type") String type) {
         return vehicleService.getVehiclesByType(type);
     }
 

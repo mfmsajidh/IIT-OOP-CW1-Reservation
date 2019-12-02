@@ -1,13 +1,14 @@
 package iit.oop.reservation.repository;
 
 import iit.oop.reservation.model.Vehicle;
-import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
-import reactor.core.publisher.Flux;
+
+import java.util.List;
 
 @Repository
-public interface VehicleRepository extends ReactiveMongoRepository<Vehicle, String> {
+public interface VehicleRepository extends MongoRepository<Vehicle, String> {
 
-    Flux<Vehicle> findAllByType(String type);
+    List<Vehicle> findAllByType(String type);
 
 }

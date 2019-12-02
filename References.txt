@@ -20,4 +20,8 @@
 20) https://www.baeldung.com/spring-cors
 21) https://www.baeldung.com/spring-webflux-cors
 22) https://www.baeldung.com/spring-webflux-filters
-23)
+23) https://www.baeldung.com/queries-in-spring-data-mongodb
+24) https://www.baeldung.com/spring-response-entity
+25) https://www.baeldung.com/spring-request-response-body
+26) https://www.devglan.com/spring-boot/spring-boot-mongodb-crud
+27)

@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -19,10 +18,9 @@ public class ScheduleService {
     @Autowired
     ScheduleRepository scheduleRepository;
 
-    public List<Vehicle> searchVehicles(LocalDate fromDate, LocalDate toDate, String vehicleType) {
-//        Flux<Vehicle> vehicles = vehicleRepository.findAllByType(vehicleType);
-        List<Schedule> schedules = new ArrayList<>();
-        return null;
+    public List<Schedule> searchVehicles(LocalDate fromDate, LocalDate toDate, String vehicleType) {
+        List<Schedule> schedules = scheduleRepository.findSchedulesByPickUpDateOrDropOffDateBetween(fromDate, toDate);
+        return schedules;
     }
 
     public Schedule scheduleVehicle(Schedule schedule) {

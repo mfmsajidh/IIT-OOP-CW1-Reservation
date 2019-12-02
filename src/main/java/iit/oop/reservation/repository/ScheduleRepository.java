@@ -6,12 +6,12 @@ import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
-import java.util.List;
+import java.util.ArrayList;
 
 @Repository
 public interface ScheduleRepository extends MongoRepository<Schedule, String> {
 
     @Query("{ $or: [{'pickUpDate': { $gte: ?0, $lte: ?1 }}, {'dropOffDate': { $gte: ?0, $lte: ?1 }}]}")
-    List<Schedule> findSchedulesByPickUpDateOrDropOffDateBetween(LocalDate fromDate, LocalDate toDate);
+    ArrayList<Schedule> findSchedulesByPickUpDateOrDropOffDateBetween(LocalDate fromDate, LocalDate toDate);
 
 }

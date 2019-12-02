@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -18,9 +19,11 @@ public class ScheduleService {
     @Autowired
     ScheduleRepository scheduleRepository;
 
-    public List<Schedule> searchVehicles(LocalDate fromDate, LocalDate toDate, String vehicleType) {
-        List<Schedule> schedules = scheduleRepository.findSchedulesByPickUpDateOrDropOffDateBetween(fromDate, toDate);
-        return schedules;
+    public List<Vehicle> searchVehicles(LocalDate fromDate, LocalDate toDate, String vehicleType) {
+        ArrayList<Schedule> schedules = scheduleRepository.findSchedulesByPickUpDateOrDropOffDateBetween(fromDate, toDate);
+        ArrayList<String> alreadyScheduledList = new ArrayList<>();
+        schedules.forEach((schedule) -> alreadyScheduledList.add(schedule.getVehicle_id()));
+        return vehicleRepository.findAllVehiclesNotInId(alreadyScheduledList, vehicleType);
     }
 
     public Schedule scheduleVehicle(Schedule schedule) {

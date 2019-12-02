@@ -18,7 +18,7 @@ public class ScheduleController {
     ScheduleService scheduleService;
 
     @GetMapping("/searchVehicles")
-    public List<Schedule> searchVehicles(
+    public List<Vehicle> searchVehicles(
             @RequestParam @DateTimeFormat(pattern = "dd/MM/yyyy") LocalDate fromDate,
             @RequestParam @DateTimeFormat(pattern = "dd/MM/yyyy") LocalDate toDate,
             @RequestParam String vehicleType

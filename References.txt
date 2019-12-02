@@ -25,4 +25,6 @@
 25) https://www.baeldung.com/spring-request-response-body
 26) https://www.devglan.com/spring-boot/spring-boot-mongodb-crud
 27) https://docs.mongodb.com/manual/tutorial/query-documents/
-28)
+28) https://docs.mongodb.com/manual/reference/operator/query/nin/
+29) https://www.javatpoint.com/java-arraylist
+30)

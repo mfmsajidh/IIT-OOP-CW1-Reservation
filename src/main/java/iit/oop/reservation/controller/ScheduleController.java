@@ -17,9 +17,8 @@ public class ScheduleController {
     ScheduleService scheduleService;
 
     @GetMapping(value = "/viewAvailableVehicles")
-    public Flux<Vehicle> getAllVehicles() {
-//        return scheduleService.getAllVehicles();
-        return null;
+    public Flux<Schedule> getAllAvailableVehiclesByType(String type) {
+        return scheduleService.getAllAvailableVehiclesByType(type);
     }
 
     @PostMapping("/scheduleVehicle")

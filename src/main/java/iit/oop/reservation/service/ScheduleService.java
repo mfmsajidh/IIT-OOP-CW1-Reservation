@@ -13,6 +13,10 @@ public class ScheduleService {
     @Autowired
     ScheduleRepository scheduleRepository;
 
+    public Flux<Schedule> getAllAvailableVehiclesByType(String type) {
+        return null;
+    }
+
     public Mono<Schedule> createSchedule(Schedule schedule) {
         return scheduleRepository.insert(schedule);
     }
